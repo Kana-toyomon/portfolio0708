@@ -1,0 +1,335 @@
+.about {
+  margin-top: 130px;
+}
+
+.about-inner {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+  background-color: aliceblue;
+}
+
+.about-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.about-image {
+  width: 50%;
+}
+
+.about-text {
+  width: 700px;
+  /* background-color: aliceblue; */
+  padding: 40px;
+}
+
+.about-name {
+  display: flex;
+}
+
+.name-kanji {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 0.1em;
+}
+
+.name-kana {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 3px;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 2.5;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.strengths-inner {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.strengths-inner h3 {
+  font-size: 18px;
+  font-weight: lighter
+}
+
+.strengths-inner h3::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 450px;
+  background-color: #ffbb66;
+  margin-top: 15px;
+}
+
+.strengths-inner li {
+  display: inline-block;
+  margin-bottom: 55px;
+}
+
+.strength-text {
+  font-size: 16px;
+  line-height: 2.5;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.career-detail {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.career-list li {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.career-list :last-child,
+.strengths-inner :last-child {
+  margin-bottom: 0;
+}
+
+.career-list p {
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-right: 80px;
+  line-height: 2.5;
+}
+
+.career-date {
+  position: relative;
+  padding-left: 24px;
+}
+
+.career-date::before {
+  content: "";
+  position: absolute;
+  top: 14.3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #ffbb66;
+  border-radius: 50%;
+}
+
+.image-hover-box {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.image-hover-box img {
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+/* テキストの上に載せる透明レイヤー */
+.overlay-text {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2a3b47;
+  font-size: 18px;
+  line-height: 1.5;
+  /* font-weight: bold; */
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  opacity: 0;
+}
+
+/* ホバー時の変化 */
+.image-hover-box:hover img {
+  opacity: 0.5;
+  /* 画像を薄くする（0〜1） */
+}
+
+.image-hover-box:hover .overlay-text {
+  opacity: 1;
+}
+
+.interests-list {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+}
+
+.interests-list p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+/* iphone11 */
+@media(max-width:767px) {
+  .about {
+    margin-top: 80px;
+  }
+
+  .about-inner {
+    display: block;
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+    padding: 0;
+    margin: 15px 20px 15px 0px;
+  }
+
+  .name-kanji {
+    margin-left: 16px;
+  }
+
+  .about-description {
+    width: 90%;
+    display: inline-block;
+    margin: 10px 20px 15px 20px;
+    line-height: 2;
+  }
+
+  .strengths-inner li {
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  .strengths-inner h3::after {
+    width: 330px;
+  }
+
+  .strength-text {
+    line-height: 2;
+  }
+
+  .career-detail {
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  .career-list li {
+    display: block;
+  }
+
+  .career-list p {
+    margin-left: 10px;
+    margin-right: 20px;
+    line-height: 2;
+  }
+
+  .career-date::before {
+    top: 10.3px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+
+  .interests-list {
+    display: block;
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  .interests-list li {
+    margin-bottom: 50px;
+  }
+
+  .interests-list p {
+    font-size: 18px;
+    line-height: 1;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .overlay-text {
+    opacity: 1;
+    top: 84%;
+    background-color: rgba(225, 225, 225, 0.7);
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* タブレット */
+@media (min-width: 768px) and (max-width: 810px) {
+  .about-inner {
+    display: block;
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .strengths-inner,
+  .career-detail {
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  .interests-list {
+    display: flex;
+    width: 100%;
+    margin: 40px auto 0px auto;
+    overflow: scroll;
+  }
+
+  .interests-list li {
+    width: 300px;
+    flex-shrink: 0;
+  }
+
+  .overlay-text {
+    opacity: 1;
+    top: 84%;
+    background-color: rgba(225, 225, 225, 0.7);
+    width: 280px;
+    padding: 10px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kana Sonoda portfolio</title>
+  <meta name="discription" content="作品実績やプロフィールを紹介しています。">
+  <script src="js/toggle-menu.js"></script>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <p>PORTFOLIO</p>
+      </a>
+      <button class="toggle-menu-button"></button>
+      <div class="header-site-menu">
+        <nav class="site-menu">
+          <ul>
+            <li><a href="index.html">TOP</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="mailto:sonoda1009@icloud.com">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="first-view">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+
+      <div class="first-view-text">
+        <h1>Kana Sonoda</h1>
+        <p>Portfolio</p>
+      </div>
+    </div>
+
+    <section class="works section" id="works">
+      <h2 class="-title">WORKS</h2>
+      <div class="feature">
+        <div class="work1">
+          <a class="kissa-amber" href="kissa-amber.html"><img src="./images/index/kissa-amber-mu.jpg"
+              alt="喫茶AMBER　WEBサイト" class="work1-image"></a>
+          <div class="work-contents">
+            <a class="kissa-amber" href="kissa-amber.html">
+              <h3 class="work-title">"喫茶AMBER" WEBサイト(架空)</h3>
+            </a>
+            <p class="work-scope">企画｜デザイン｜コーディング</p>
+            <p class="work-contents-text">店舗の世界観を活かしつつも親しみやすさと分かりやすさを重視し、スマートフォンからのスムーズな導線設計にこだわりました。</p>
+          </div>
+        </div>
+        <div class="work2">
+          <a class="run-vibe" href="onlinesite.html"><img src="./images/index/onlinesite-mu.png" alt="RUN BIVE　オンラインストア"
+              class="work2-image"></a>
+          <div class="work-contents">
+            <a class="run-vibe" href="onlinesite.html">
+              <h3 class="work-title">"RUN BIVE"　オンラインストア(架空)</h3>
+            </a>
+            <p class="work-scope">企画｜デザイン｜コーディング</p>
+            <p class="work-contents-text">ユーザー視点を重視し、購買意欲を引き出すサイト設計を行いました。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section">
+      <h2 class="skills-title">SKILLS</h2>
+      <ul class="skills-grid">
+        <li class="skills-item">
+          <dl>
+            <dt>HTML/CSS</dt>
+            <dd>基本的なWebページのレイアウトをコーディングできます。<br>FlexboxやGridを用いた配置、スマートフォン対応のレスポンシブデザインにも対応可能です。</dd>
+          </dl>
+        </li>
+
+        <li class="skills-item">
+          <dl>
+            <dt>JavaScript</dt>
+            <dd>基本的なコードの書き方を学び、jQueryを使って簡単な動きのある機能を実装できます。<br>例えば、スライドショー、ハンバーガーメニュー、クリックで表示が変わる仕組みなどを作りました。</dd>
+          </dl>
+        </li>
+
+        <li class="skills-item">
+          <dl>
+            <dt>Photoshop</dt>
+            <dd>Webサイトのデザインカンプの作成や、写真の明るさ・サイズ調整、トリミングなどの基本的な編集に使用しています。</dd>
+          </dl>
+        </li>
+      </ul>
+    </section>
+
+    <section class="profile section">
+      <h2 class="profile-title">ABOUT</h2>
+      <div class="profile-inner">
+        <div class="photo-wrapper">
+          <img class="profile-image" src="./images/index/index-profile.jpg" alt="プロフィール写真">
+        </div>
+        <div class="profile-text">
+          <div class="profile-name">
+            <p class="name-kanji">園田 佳那</p>
+            <p class="name-kana">そのだ かな</p>
+          </div>
+          <p class="profile-description">
+            1998年滋賀県生まれ。現在は医療事務として働きながら、Web制作を学びました。
+            視覚や体感を通じて伝えるモノづくりに魅了され、Web制作の仕事に挑戦したいです。
+          </p>
+          <div class="link-button-area">
+            <a class="link-button" href="about.html">VIEW MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="site-menu">
+      <ul>
+        <li><a href="index.html">TOP</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+      </ul>
+    </nav>
+    <div class="contact">
+      <p id="contact">CONTACT</p>
+      <p id="mailaddress"><a href="mailto:sonoda1009@icloud.com">sonoda1009@icloud.com</a></p>
+    </div>
+    <p id="copyright">&copy; 2025 Kana Sonoda. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

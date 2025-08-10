@@ -1,0 +1,425 @@
+.first-view {
+  background-color: aliceblue;
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 110px;
+  /* 円をabsoluteで配置するために必要 */
+  overflow: hidden;
+  /* 円がはみ出る場合に切り取る（必要なら） */
+}
+
+.first-view-text {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-family: Noto Sans, sans-serif;
+  line-height: 70px;
+}
+
+.first-view-text h1 {
+  font-size: 56px;
+}
+
+.first-view-text p {
+  font-size: 48px;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(20px);
+  z-index: 0;
+  /* テキストの後ろに */
+}
+
+/* 大きな円：左上 */
+.circle1 {
+  width: 400px;
+  height: 400px;
+  background-color: #e17a00;
+  top: 50px;
+  left: -100px;
+}
+
+/* 中くらいの円：右下 */
+.circle2 {
+  width: 200px;
+  height: 200px;
+  background-color: #2a3b47;
+  bottom: 30%;
+  right: -50px;
+}
+
+/* 小さめの円：右中央あたり */
+.circle3 {
+  width: 120px;
+  height: 120px;
+  background-color: #987de6;
+  top: 20%;
+  left: 70%;
+  transform: translateY(-50%);
+}
+
+/* メイン */
+/* .section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 90px auto 0px auto;
+} */
+
+/* h2 {
+  font-family: Noto Sans, sans-serif;
+  font-size: 48px;
+  margin: 20px 20px 60px 20px;
+  display: inline-block
+} */
+#works {
+  scroll-margin-top: 110px;
+  margin-top: 180px;
+}
+
+.feature {
+  max-width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.work-title {
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.work1,
+.work2 {
+  /* ipadのサイズにしたときに崩れている */
+  width: 500px;
+}
+
+.work-contents p {
+  font-size: 16px;
+}
+
+.work-scope {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.work-contents-text {
+  display: inline-block;
+  margin-top: 15px;
+  line-height: 28px;
+}
+
+.skills-grid {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+}
+
+.skills-item {
+  background-color: aliceblue;
+  padding: 25px;
+}
+
+.skills-item dt {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px
+}
+
+.skills-item dd {
+  font-size: 16px;
+  line-height: 1.8;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.profile-inner {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-image {
+  width: 450px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  box-shadow: 1px 1px 1px 1px #e0e0e0;
+}
+
+.photo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.photo-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+  z-index: 0;
+  box-shadow: 1px 1px 1px 1px #e0e0e0;
+}
+
+.profile-text {
+  max-width: 550px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.profile-name {
+  display: flex;
+}
+
+.name-kanji {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 0.1em;
+}
+
+.name-kana {
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding-top: 3px;
+}
+
+.profile-description {
+  font-size: 16px;
+  line-height: 2.5;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.link-button-area {
+  text-align: center;
+  margin-top: 72px;
+}
+
+.link-button {
+  background-color: #faf6ef;
+  display: inline-block;
+  min-width: 180px;
+  line-height: 48px;
+  border-radius: 24px;
+  border: 2px solid #2a3b47;
+  font-family: Noto Sans, sans-serif;
+  font-weight: bold;
+}
+
+.link-button:hover {
+  background-color: #2a3b47;
+  color: #faf6ef;
+}
+
+
+
+@media(max-width:767px) {
+  .first-view {
+    width: 100%;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    top: 50px;
+  }
+
+  .first-view-text {
+    padding-top: 60px;
+  }
+
+  .first-view-text h1 {
+    font-size: 36px;
+    line-height: 1;
+  }
+
+  .first-view-text p {
+    font-size: 32px;
+    margin-top: 15px;
+  }
+
+  .circle1 {
+    width: 280px;
+    height: 280px;
+    left: -50px;
+    top: 50px;
+  }
+
+  .circle2 {
+    width: 110px;
+    height: 110px;
+    right: -40px;
+    bottom: 30%;
+  }
+
+  .circle3 {
+    width: 170px;
+    height: 170px;
+    left: 50%;
+    top: 70%;
+  }
+
+  .feature {
+    display: block;
+  }
+
+  #works {
+    margin-top: 110px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+  }
+
+  .work1,
+  .work2 {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+  }
+
+  /* .work2 {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+  } */
+  .work-contents {
+    max-width: 90%;
+    /* または100%でもOK */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .work-title {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .work-scope {
+    line-height: 1.5;
+  }
+
+  .work-contents-text {
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+
+  .skills-grid {
+    width: 100%;
+    margin: 40px auto 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .profile-inner {
+    display: block;
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  .photo-wrapper::before {
+    content: none;
+    display: none;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .profile-description {
+    line-height: 2;
+  }
+
+  .link-button-area {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 810px) {
+  .section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+
+  .feature {
+    display: block;
+  }
+
+  .works {
+    margin-top: 110px;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin: 0;
+  }
+
+  .work1 {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .work2 {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+  }
+
+  .skills-grid {
+    margin-top: 40px;
+  }
+
+  .profile-inner {
+    display: block;
+    width: 100%;
+    margin: 40px auto 0px auto;
+  }
+
+  .photo-wrapper::before {
+    content: none;
+    display: none;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .link-button-area {
+    margin-left: 172px;
+  }
+}
