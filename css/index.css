@@ -5,9 +5,7 @@
   align-items: center;
   position: relative;
   top: 110px;
-  /* 円をabsoluteで配置するために必要 */
   overflow: hidden;
-  /* 円がはみ出る場合に切り取る（必要なら） */
 }
 
 .first-view-text {
@@ -36,7 +34,6 @@
   opacity: 0.3;
   filter: blur(20px);
   z-index: 0;
-  /* テキストの後ろに */
 }
 
 /* 大きな円：左上 */
@@ -67,19 +64,6 @@
   transform: translateY(-50%);
 }
 
-/* メイン */
-/* .section {
-  width: 100%;
-  max-width: 1200px;
-  margin: 90px auto 0px auto;
-} */
-
-/* h2 {
-  font-family: Noto Sans, sans-serif;
-  font-size: 48px;
-  margin: 20px 20px 60px 20px;
-  display: inline-block
-} */
 #works {
   scroll-margin-top: 110px;
   margin-top: 180px;
@@ -101,7 +85,6 @@
 
 .work1,
 .work2 {
-  /* ipadのサイズにしたときに崩れている */
   width: 500px;
 }
 
@@ -301,13 +284,8 @@
     margin: 40px 0px 0px 0px;
   }
 
-  /* .work2 {
-    width: 100%;
-    margin: 40px 0px 0px 0px;
-  } */
   .work-contents {
     max-width: 90%;
-    /* または100%でもOK */
     margin-left: auto;
     margin-right: auto;
   }
