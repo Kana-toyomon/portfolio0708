@@ -17,18 +17,8 @@
   flex-direction: row-reverse;
 }
 
-.about-img-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 480px;
-  height: 435px;
-  padding-right: 25px;
-}
-
 .about-image {
-  max-width: 90%;
-  max-height: 90%;
+  width: 50%;
 }
 
 .about-text {
@@ -57,7 +47,7 @@
 
 .about-description {
   font-size: 16px;
-  line-height: 2;
+  line-height: 2.5;
   display: inline-block;
   margin-top: 15px;
 }
@@ -191,9 +181,7 @@
 /* iphone11 */
 @media(max-width:767px) {
   .about {
-    margin-top: 20px;
-    padding-top: 80px;
-    background-color: aliceblue;
+    margin-top: 80px;
   }
 
   .about-inner {
@@ -210,11 +198,8 @@
     margin: 0;
   }
 
-  .about-img-container {
+  .about-image {
     width: 100%;
-    padding-right: 0;
-    height: 300px;
-    align-items: normal;
   }
 
   .about-text {
@@ -300,16 +285,10 @@
 
 /* タブレット */
 @media (min-width: 768px) and (max-width: 810px) {
-  .about {
-    background-color: aliceblue;
-    margin-top: 60px;
-    padding-top: 100px;
-  }
-
   .about-inner {
     display: block;
     width: 100%;
-    margin: 25px auto 0px auto;
+    margin: 40px auto 0px auto;
   }
 
   h2 {
@@ -320,14 +299,8 @@
     margin: 0;
   }
 
-  .about-img-container {
-    width: 100%;
-    padding-right: 0;
-    align-items: center;
-  }
-
   .about-image {
-    object-fit: cover;
+    width: 100%;
   }
 
   .strengths-inner,
